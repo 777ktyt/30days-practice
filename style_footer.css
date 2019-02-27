@@ -1,0 +1,837 @@
+@charset "UTF-8";
+ul{
+  list-style: none;
+}
+
+/* ナビゲーションバー */
+#navigation{
+  width: 100%;
+  height: 100px;
+  background-color: #3F51B5;
+  position: fixed;
+  z-index: 1;
+  padding: 0 140px;
+}
+#navigation .logo{
+  display: inline-block;
+  width: 200px;
+  height: 39px;
+  margin-right: 0;
+}
+#navigation img{
+  display: inline-block;
+  margin: 31px 0 30px 0;
+}
+#navigation .navmenu{
+  display: inline-block;
+  width: auto;
+  margin: 40px 0px 34.5px auto;
+  float: right;
+}
+
+#navigation li{
+  display: inline-block;
+  list-style: none;
+}
+#navigation .navmenu a{
+  color: #ffffff;
+  margin-left: 30px;
+  padding-bottom: 4.5px;
+  font-size: 16px;
+  text-decoration: none;
+
+}
+#navigation .navmenu a:hover{
+  border-bottom: 3px solid #E81919;
+}
+
+/* TOP画面 */
+#top{
+  background-image: url('img/mainvisual.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 600px;
+}
+#top .top-inner{
+  text-align: center;
+  vertical-align: middle;
+}
+#top h1{
+  font-weight: bold;
+  font-size: 68px;
+  height: 87px;
+  margin-top: 149px;
+  margin-bottom: 12px;
+}
+#top p{
+  font-weight: bold;
+  font-size: 38px;
+  margin-bottom: 82px;
+}
+#top .btn{
+  font-size: 38px;
+  font-weight: bold;
+  padding: 17px 81px;
+  background-color: #3F51B5;
+  color: #FFFFFF;
+}
+
+/* card画面 */
+#card{
+  background-color: #EFEFEF;
+  height: 100%;
+  width: 100%;
+  padding: 0 139px;
+}
+
+#card .title{
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 68px;
+  padding-bottom: 68.57px;
+
+}
+#card h2{
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding: 0 0;
+  margin-bottom: 40.45px;
+}
+#card h2:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -44.43px;/*線の上下位置*/
+  display: inline-block;
+  width: 76px;/*線の長さ*/
+  height: 5px;/*線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #3F51B5;/*線の色*/
+  /* border-radius: 2px;/*線の丸み*/
+}
+
+#card .card{
+  max-height: 355px;
+  max-width: 342px;
+  margin-bottom: 20px;
+  padding: 16px 16px 28px 16px;
+}
+#card img{
+  max-height: 161px;
+  max-width: 310px;
+}
+
+#card h4{
+  font-size: 22px;
+  font-weight: bold;
+  color: #6F7579;
+}
+#card .card-text{
+  font-size: 16px;;
+  font-weight: bold;
+  color: #6F7579;
+}
+
+/* News画面 */
+#news{
+  height: 100%;
+  width: 100%;
+  padding: 0 259.5px;
+}
+#news .title{
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 68px;
+  padding-bottom: 68.57px;
+
+}
+#news h2{
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding: 0 0;
+  margin-bottom: 40.45px;
+}
+#news h2:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -44.43px;/*線の上下位置*/
+  display: inline-block;
+  width: 76px;/*線の長さ*/
+  height: 5px;/*線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #3F51B5;/*線の色*/
+  /* border-radius: 2px;/*線の丸み*/
+}
+#news table{
+  max-width: 838px;
+}
+#news tr{
+  border-bottom: 1px solid #707070;
+  margin-bottom: 19px;
+  display: flex;
+}
+#news .date{
+  color: #333333;
+  width: 122.5px;
+  height: 46.5px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 21px;
+  padding: 4px 0 21.5px 7.5px;
+}
+#news .label{
+  display: inline-block;
+  padding: 0 0;
+  margin: 0 30px 0 0;
+}
+#news .btn{
+  color: #ffffff;
+  background-color: #666666;
+  width: 100px;
+  height: 30px;
+  padding: 4.42px 18px 4.58px 18px;
+  font-size: 16px;
+  line-height: 21px;
+  border-radius: 6px;
+}
+#news .btn-2{
+  background-color: #3F51B5;
+}
+#news .btn-3{
+  background-color: #E81919;
+}
+#news .tr-5{
+  border-bottom: none;
+}
+#news .news-txt{
+  font-size: 16px;
+  font-weight: normal;
+  padding: 4px 9.5px 21.5px 0;
+  overflow-wrap: break-word;
+}
+#news .news-txt a{
+  color: #333333;
+}
+#news .more{
+  text-align: center;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 16px 0 29px 0;
+}
+#news .more a{
+    color: #E81919;
+}
+
+#news .more .fa-angle-right{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6.5px;
+}
+
+/* Price画面 */
+#price{
+  height: 100%;
+  width: 100%;
+  padding: 0 139px;
+  background-color: #EFEFEF;
+}
+#price .title{
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 68px;
+  padding-bottom: 68.57px;
+
+}
+#price h2{
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding: 0 0;
+  margin-bottom: 40.45px;
+}
+#price h2:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -44.43px;/*線の上下位置*/
+  display: inline-block;
+  width: 76px;/*線の長さ*/
+  height: 5px;/*線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #3F51B5;/*線の色*/
+  /* border-radius: 2px;/*線の丸み*/
+}
+#price img{
+  display: inline-block;
+  max-width: 360px;
+  max-height: 300px;
+  margin: 0 122px 112px 0;
+}
+#price table{
+  display: inline-block;
+  max-width: 608px;
+  max-height: 274px;
+  border-collapse: collapse;
+}
+#price tr{
+  text-align: center;
+  max-height: 82px;
+  font-size: 16px;
+  line-height: 21px;
+}
+#price th{
+  padding: 14px 61px;
+  background-color: #999999;
+  color: #ffffff;
+  border: 1px solid #707070;
+
+}
+#price .tr-head th{
+  width: 100%;
+  padding: 14px 79px;
+}
+#price td{
+  text-align: right;
+  border: 1px solid #707070;
+  background-color: #ffffff;
+  padding: 14px 17px 14px 0;
+  font-weight: 100;
+}
+#price span{
+  color: #E81919;
+}
+#price p{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #333333;
+  margin: 20px 0 0 0;
+}
+#price p a{
+  color: #333333;
+}
+
+/* Access画面 */
+#access{
+  height: 100%;
+  width: 100%;
+  padding: 0 283px;
+  text-align: center;
+}
+#access .title{
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 68px;
+  padding-bottom: 68.57px;
+
+}
+#access h2{
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding: 0 0;
+  margin-bottom: 40.45px;
+}
+#access h2:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -44.43px;/*線の上下位置*/
+  display: inline-block;
+  width: 76px;/*線の長さ*/
+  height: 5px;/*線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #3F51B5;/*線の色*/
+  /* border-radius: 2px;/*線の丸み*/
+}
+#access .googlemap{
+  position: relative;
+    width: 100%;    /* 左右に余白が必要なら値を変更してもOK */
+    height: 0;
+    padding-bottom: 50%;   /* padding-topでもOK */
+    overflow: hidden;
+    margin-bottom: 42px;
+}
+#access iframe{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    /* 必要であれば!importantを付けてください */
+    height: 100%;    /* 必要であれば!importantを付けてください */
+}
+#access table{
+  margin: 0 0 38px 40px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 100;
+  text-align: left;
+}
+#access .address-title{
+  width: 120px;
+}
+#access .btn{
+  display: inline-block;
+  background-color: #3F51B5;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px 0 #000000;
+  margin-bottom: 50px;
+  color: #FFFFFF;
+  width: 305px;
+  height: 56px;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 14px 0 14px 30px;
+}
+#access .fa-angle-right{
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 18px;
+}
+
+/* Contact画面 */
+#contact{
+  height: 100%;
+  width: 100%;
+  padding: 0 283px 122px 283px;
+  background-color: #EFEFEF;
+}
+#contact .title{
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 68px;
+  padding-bottom: 68.57px;
+
+}
+#contact h2{
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding: 0 0;
+  margin-bottom: 40.45px;
+}
+#contact h2:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -44.43px;/*線の上下位置*/
+  display: inline-block;
+  width: 76px;/*線の長さ*/
+  height: 5px;/*線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #3F51B5;/*線の色*/
+  /* border-radius: 2px;/*線の丸み*/
+}
+#contact form{
+  background-color: #FFFFFF;
+  max-width: 800px;
+  height: 912px;
+  margin: 0 auto;
+  padding: 58px 43px 60px 52px;
+  text-align: center;
+}
+#contact .form-line{
+  margin-bottom: 49px;
+}
+#contact dt{
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 18.5px;
+  margin-right: 30px;
+  padding: 0 0;
+  text-align: left;
+  width: 144px;
+}
+#contact .mark-label{
+  margin-top: 7px;
+  text-align: center;
+  width: 46px;
+  font-size: 14px;
+  background-color: #E81919;
+  border-radius: 12px;
+  color: #ffffff;
+}
+#contact .name,
+#contact .email,
+#contact select,
+#contact textarea{
+  width: 528px;
+  border: 1px solid #707070;
+}
+#contact .name,
+#contact .email,
+#contact select{
+  height: 60px;
+}
+#contact textarea{
+  height: 240px;
+}
+#contact .radio-box{
+  /* 2/25一旦休憩 ラジオボタンのカスタマイズを調べておく*/
+  margin: 26px 30px 44px 0;
+}
+#contact .radio-btn{
+  margin-right: 9px;
+}
+#contact .policy,
+#contact .policy a{
+  color: #333333;
+}
+#contact .checkbox{
+  margin: 5px 20px 0 0;
+}
+#contact .policy{
+  margin-bottom: 30px;
+}
+#contact .policy p{
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+#contact .btn{
+  display: inline-block;
+  background-color: #3F51B5;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px 0 #000000;
+  color: #FFFFFF;
+  width: 261px;
+  height: 56px;
+  font-size: 22px;
+  line-height: 29px;
+  padding: 14px 0 14px 30px;
+}
+#contact .fa-angle-right{
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 18px;
+}
+#footer{
+  background: linear-gradient(#666666, #333333);
+  text-align: center;
+  color: #FFFFFF;
+}
+#footer .prof{
+  padding: 74px 0 0 0;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+}
+#footer .prof ul{
+  margin-top: 30px;
+}
+#footer .prof .address{
+  padding-right: 41px;
+}
+#footer .prof .tel{
+  padding-right: 76px;
+}
+#footer .link{
+  padding: 83px 0 0 0;
+}
+#footer .link ul{
+  padding-left: 0;
+}
+#footer .sns{
+  padding: 80px 0 0 0;
+}
+#footer .sns ul{
+  padding-left: 192px;
+}
+#footer .sns li{
+  margin-right: 16px;
+}
+#footer .copy{
+  margin: 91px auto 31px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* メディアクエリ */
+/* タブレット */
+@media (max-width: 992px){
+  #navigation{
+    text-align: center;
+    padding: 0 30px;
+  }
+  #navigation .navmenu{
+    display: none;
+  }
+  #top h1{
+    font-weight: bold;
+    font-size: 3rem;
+    height: 87px;
+    margin-top: 149px;
+    margin-bottom: 12px;
+  }
+  #top p{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 82px;
+  }
+  #top .btn{
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 17px auto;
+    background-color: #3F51B5;
+    color: #FFFFFF;
+  }
+  #card{
+    padding: 0 50px;
+  }
+  #card .card{
+    max-height: 355px;
+    max-width: 150%;
+  }
+  #card img{
+    max-height: 161px;
+    max-width: 150%;
+  }
+  #card h4{
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: #6F7579;
+    padding: 0 auto;
+    margin-bottom: 20px;
+  }
+  #card p{
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #6F7579;
+    padding: 0 auto;
+  }
+  #news{
+    padding: 0 50px;
+  }
+  #price{
+    padding: 0 50px;
+    text-align: center;
+  }
+  #price img{
+    margin: 60px auto;
+  }
+
+  #price .col-12{
+    margin: 20px auto;
+  }
+  #access{
+    padding: 0 50px;
+  }
+  #contact{
+    padding: 0 50px;
+    height: 1300px;
+  }
+  #contact form{
+    padding: 10px 10px;
+    height: 912px;
+  }
+  #contact dt{
+    margin: 5px auto;
+  }
+  #contact .radio-box-set{
+    justify-content: center;
+  }
+  #contact textarea{
+    height: 100%;
+  }
+  #footer .prof{
+    padding: 30px 0 0 0;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: normal;
+  }
+  #footer .prof ul{
+    margin-top: 30px;
+  }
+  #footer .link{
+    padding: 30px 0 0 0;
+  }
+  #footer .sns{
+    padding: 30px 0 0 0;
+  }
+  #footer .sns ul{
+    padding: 0 0;
+    justify-content: center;
+  }
+  #footer .sns li{
+    margin-right: 16px;
+  }
+}
+
+/* スマホ */
+@media (max-width: 576px){
+  #navigation{
+    width: 100%;
+    height: 100px;
+    background-color: #3F51B5;
+    padding: 0 0;
+    text-align: center;
+  }
+  #navigation img{
+    display: inline-block;
+  }
+  #top h1{
+    font-weight: bold;
+    font-size: 38px;
+    height: 87px;
+    margin-top: 149px;
+    margin-bottom: 12px;
+  }
+  #top p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 82px;
+  }
+  #top .btn{
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 17px auto;
+    background-color: #3F51B5;
+    color: #FFFFFF;
+  }
+  #card{
+    padding: 0 auto;
+  }
+  #card .card{
+    margin-bottom: 20px;
+  }
+  #card img{
+    height: 10rem;
+    width: 100%;
+  }
+  #card .card-body{
+    position: relative;
+    width: 100%;
+    padding: 23px 15px;
+  }
+  #card h4{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6F7579;
+  }
+  #card .card-text{
+    font-size: 0.3rem;;
+    font-weight: normal;
+    color: #6F7579;
+  }
+  #news{
+    padding: 0 20px;
+  }
+  #news .date{
+    width: 50%;
+    font-size: 0.7rem;
+  }
+  #news .label{
+    margin: 0 10px 0 0;
+  }
+  #news .btn{
+    color: #ffffff;
+    width: 100%;
+    height: 30px;
+    padding: 4.42px 18px 4.58px 18px;
+    font-size: 0.7rem;
+    line-height: 21px;
+    border-radius: 50%;
+  }
+  #news .news-txt{
+    font-size: 0.7rem;
+    font-weight: normal;
+    padding: 4px 9.5px 21.5px 0;
+  }
+  #price img{
+    width: 100%;
+
+  }
+  #price table{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    max-height: 274px;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+
+  #price tr{
+    height: 0.8rem;
+    font-size: 0.8rem;
+    line-height: 21px;
+  }
+
+  #price td{
+    text-align: center;
+    border: 1px solid #707070;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    font-weight: 100;
+  }
+  #price .tr-head th{
+    width: 10%;
+    padding: 5px 5px;
+  }
+  #price th{
+    padding: 4px 4px;
+    background-color: #999999;
+    color: #ffffff;
+    border: 1px solid #707070;
+  }
+  #contact{
+    height: 1500px;
+  }
+  #contact form{
+    height: 1200px;
+  }
+  #contact .name,
+  #contact .email,
+  #contact select,
+  #contact textarea{
+    width: 250px;
+    border: 1px solid #707070;
+  }
+  #contact .btn{
+    width: 200px;
+  }
+  #footer .copy{
+    margin: 30px auto 31px auto;
+  }
+}
